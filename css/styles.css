@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/* 
+================================
+Variables
+================================
+*/
+:root {
+
+    /* Primary */
+    /*  */
+    --palesalmon: hsl(6, 100%, 80%);
+    --hotpink: hsl(335, 100%, 65%);
+
+
+    /* Neutral */
+    --paleblue: hsl(243, 100%, 93%);
+    --grayishblue: hsl(229, 7%, 55%);
+    --darkblue: hsl(228, 56%, 26%);
+    --verydarkblue: hsl(229, 57%, 11%);
+
+    /* font family */
+
+    --font-family: 'Raleway', sans-serif;
+    
+}
+
+
+
+
+/* 
+================================
+Global Styles
+================================
+*/
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {font-size: 87.5%;} /*14px*/
+
+
+body {
+    background: var(--verydarkblue);
+    background-image: url(/images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--font-family);
+    font-weight: 700;
+    line-height: 1.75;
+    color: var(--paleblue);
+}
+
+.img {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--dark-blackish-blue);
+    margin-top: 0.5rem;
+}
+
+.attribution a {
+    color: hsl(26, 91%, 57%);
+}
+
+.sr-only{
+    border:0; 
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    margin: -1px;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+
+
+
+main {
+    display: grid;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+
+    align-content: center;
+    /* grid-template-columns: minmax(200px, 1fr); */
+    /* row-gap: 2rem; */
+    grid-template-columns: minmax(200px, 400px);
+    grid-template-rows: minmax(200px, 250px);
+    border: 2px solid wheat;
+}
+
+.logo-card {
+    /* border: 2px solid chartreuse; */
+    padding: 2rem;
+    border-top-right-radius: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    background: var(--darkblue);
+}
+
+
+.logo-container {
+    border: 2px solid red;
+}
+
+.logo-img {
+    width: 100%;
+}
+.icon-container {
+    border: 2px solid orange;
+    display: flex;
+    
+}
+
+
+.btn {
+    display: inline-block;
+    border:transparent;
+   cursor: pointer;
+   background: var(--darkblue);
+   /* height: 100%; */
+   /* width: 100%; */
+   height: 4rem;
+   /* width: 3rem; */
+}
+
+.icon {
+
+    /* height: 2rem; */
+    /* width: 5rem; */
+    /* transform: scale(1); */
+    /* height: 90%; */
+    height: 100%;
+    /* width: 100%; */
+     /* transform: scale(0.5); */
+    /* width: 100%; */
+    background: var(--verydarkblue);
+    border-radius: 0.75rem;
+    display: inline;
+    padding: 1rem;
+    border: 2px solid red;
+    border-radius: 1rem;
+    margin-right : 2rem;
+
+    /* border: 2rem solid bisque; */
+}
+
+
+.usage-card {
+    border: 2px solid aquamarine;
+    align-self: flex-start;
+    background: var(--darkblue);
+    border: transparent;
+    border-radius: 1rem;
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+}
+
+.usage-card h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--grayishblue);
+}
+
+/* .usage-card span {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--paleblue)
+} */
+progress {
+    opacity: 0;
+}
+
+.progress-element {
+    border: 2px solid red;
+    /* margin-left: 5rem; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+}
+.progress-container {
+    position: relative;
+    /* display: inline-block; */
+    width: 80%;
+    margin-left: 2rem;
+    background: var(--verydarkblue);
+    height: 15px;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+
+.progress-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 75%;
+  background: linear-gradient(75deg, var(--palesalmon) 10% , var(--hotpink));
+  border-radius: 25px;
+}
+
+
+
+.progress-start {
+  position: relative;
+  margin-top: 0.5rem;
+  font-weight: 700;
+}
+
+.progress-start::after {
+  content: "1000 GB";
+  position: absolute;
+  top:0;
+  right: 50px;
+}
+
+.gb-left-container {
+    height: 5rem;
+    width: 13rem;
+    /* border: 2px solid red; */
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    background:  white ;
+    display: flex;
+    color: var(--verydarkblue);
+    font-size: 2.5rem;
+    font-weight: 700;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     top: 80%;
+    left: 25%;
+}
+
+.gb-left {
+    font-size: 0.95rem;
+    /* display: inline-block; */
+    margin-left: 0.5rem;
+    font-weight: 700;
+     text-transform: uppercase;
+    font-weight: 700;
+    color: var(--grayishblue);
+   
+}
+    
+
+
