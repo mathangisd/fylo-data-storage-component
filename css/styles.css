@@ -18,7 +18,7 @@ Variables
     --grayishblue: hsl(229, 7%, 55%);
     --darkblue: hsl(228, 56%, 26%);
     --verydarkblue: hsl(229, 57%, 11%);
-
+    --verydarkblue-1: hsla(228, 60%, 17%, 0.7);
     /* font family */
     --font-family: 'Raleway', sans-serif;
     
@@ -90,14 +90,17 @@ main {
     min-height: 100vh;
     align-items: center;
     align-content: center;
-    grid-template-columns: 300px;
-    grid-template-rows: minmax(200px, 250px);
+    grid-template-columns: 350px;
+    /* grid-template-rows: 200px 150px; */
     padding:1rem;
+    gap: 1rem;
 }
 
 /* Logo and icons */
 .logo-card {
-    padding: 2rem;
+    height: 200px;
+    padding: 3rem;
+    border-radius: 0.75rem;
     border-top-right-radius: 6rem;
     display: flex;
     flex-direction: column;
@@ -136,23 +139,24 @@ main {
 
 /* Storage space */
 .usage-card {
+    height:200px;
     align-self: flex-start;
     background: var(--darkblue);
     border: transparent;
     border-radius: 1rem;
     padding: 1rem;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 200px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    
 }
 
 .usage-card h2 {
     font-size: 1rem;
     font-weight: 400;
     text-align: center;
-    color: var(--grayishblue);
+    color: var(--paleblue);
 }
 
 
@@ -164,16 +168,17 @@ progress {
 .progress-element {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
 }
 
 .progress-container {
     position: relative;
-    background: var(--verydarkblue);
+    background: var(--verydarkblue-1);
     height: 1.07rem;
     border-radius: 25px;
     overflow: hidden;
     margin-top: 1rem;
+    /* padding:0 1rem; */
 }
 
 /*  Color gradient in progress bar*/
@@ -203,13 +208,13 @@ progress {
 
 /* White circle on storage indicator */
 .progress-bubble {
-    height: 0.95rem;
-    width: 0.95rem;
+    height: 0.75rem;
+    width: 0.75rem;
     position: absolute;
     border-radius: 100%;
     background: white;
-    top: 97px;
-    left: 221px;
+    top: 49%;
+    left: 76%;
 
 }
 
@@ -263,39 +268,44 @@ Media Query
 
     main {
         grid-template-columns: 400px 600px;
-        grid-template-rows: 280px;
+        grid-template-rows: 200px;
         gap: 20px;
-        align-content: center;
+        /* align-content: center; */
     }
 
     .logo-card {
-        height: 300px;
+        /* height: 280px; */
         border-top-right-radius: 10rem;
-        justify-content: center;
-        align-self: flex-end;
+        /* justify-content: center; */
+        /* align-self: flex-end; */
+        padding: 2.5rem;
     }
 
     .usage-card {
+        display: block;
+        height: 80%;
         align-self: end;
-        padding: 0 2rem;
-        justify-content: flex-end;
+        padding: 1rem 2rem;
+        /* justify-content: flex-end; */
     }
 
     .usage-card h2 {
         text-align: left;
+        margin-top: 2.5rem;
     }
 
     progress-element {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-    
+        display: block;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* flex-wrap: nowrap; */
+        /* margin-top: 2.5rem; */
     }
 
     .progress-bubble {
-        left: 459px;
-        top: 84px;
-        display: flex;
+        left: 77%;
+        top: 56%;
+        /* display: flex; */
     }
 
     .progress-container {
@@ -303,8 +313,8 @@ Media Query
     }
 
     .gb-left-container {
-        top: -80%;
-        left: 25%;
+        top: -130%;
+        left: 55%;
         position: relative;
         align-items: flex-start;
         display: flex;
@@ -325,7 +335,7 @@ Media Query
     .gb-left-container p {
         align-self: center;
     }
-    
+
     .gb-left-container span {
         align-self: auto;
     }
