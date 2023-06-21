@@ -20,8 +20,7 @@ Variables
     --verydarkblue: hsl(229, 57%, 11%);
     --verydarkblue-1: hsla(228, 60%, 17%, 0.7);
     /* font family */
-    --font-family: 'Raleway', sans-serif;
-    
+    --font-family: 'Raleway', sans-serif;    
 }
 
 
@@ -88,11 +87,10 @@ main {
     display: grid;
     justify-content: center;
     min-height: 100vh;
-    align-items: center;
+    /* align-items: center; */
     align-content: center;
     grid-template-columns: 350px;
-    /* grid-template-rows: 200px 150px; */
-    padding:1rem;
+    /* padding:1rem; */
     gap: 1rem;
 }
 
@@ -110,15 +108,15 @@ main {
 }
 
 .logo-img {
-    width: 100%;
+    /* width: 100%; */
 }
 
 .icon-container {
-    display: flex;
+    /* display: flex; */
 }
 
 .btn {
-    display: inline-block;
+    /* display: inline-block; */
     border:transparent;
     cursor: pointer;
     background: var(--darkblue);
@@ -126,12 +124,12 @@ main {
 }
 
 .icon {
-    height: 100%;
+    /* height: 100%; */
     width: 50px;
     height: 50px;
     background: var(--verydarkblue);
-    border-radius: 0.75rem;
-    display: inline;
+    /* border-radius: 0.75rem; */
+    /* display: inline; */
     padding: 1rem;
     border-radius: 1rem;
     margin-right : 2rem;
@@ -140,16 +138,15 @@ main {
 /* Storage space */
 .usage-card {
     height:200px;
-    align-self: flex-start;
+    /* align-self: flex-start; */
     background: var(--darkblue);
-    border: transparent;
+    /* border: transparent; */
     border-radius: 1rem;
     padding: 1rem;
     position: relative;
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
-    
 }
 
 .usage-card h2 {
@@ -166,9 +163,8 @@ progress {
 }
 
 .progress-element {
-    display: flex;
-    flex-direction: column;
-    /* flex-wrap: nowrap; */
+    /* display: flex; */
+    /* flex-direction: column; */
 }
 
 .progress-container {
@@ -178,7 +174,6 @@ progress {
     border-radius: 25px;
     overflow: hidden;
     margin-top: 1rem;
-    /* padding:0 1rem; */
 }
 
 /*  Color gradient in progress bar*/
@@ -195,7 +190,7 @@ progress {
 
 /* Storage range values */
 .progress-start {
-    position: relative;
+    /* position: relative; */
     margin-top: 0.5rem;
     font-weight: 700;
     display: flex;
@@ -215,7 +210,6 @@ progress {
     background: white;
     top: 49%;
     left: 76%;
-
 }
 
 /* Storage remaining message box */
@@ -230,10 +224,9 @@ progress {
     font-size: 2.5rem;
     font-weight: 700;
     position: absolute;
-    display: flex;
     justify-content: center;
     align-items: center;
-    align-self: center;
+    /* align-self: center; */
     top: 80%;
     left: 20%;
 }
@@ -270,14 +263,10 @@ Media Query
         grid-template-columns: 400px 600px;
         grid-template-rows: 200px;
         gap: 20px;
-        /* align-content: center; */
     }
 
     .logo-card {
-        /* height: 280px; */
         border-top-right-radius: 10rem;
-        /* justify-content: center; */
-        /* align-self: flex-end; */
         padding: 2.5rem;
     }
 
@@ -286,7 +275,6 @@ Media Query
         height: 80%;
         align-self: end;
         padding: 1rem 2rem;
-        /* justify-content: flex-end; */
     }
 
     .usage-card h2 {
@@ -295,49 +283,44 @@ Media Query
     }
 
     progress-element {
-        display: block;
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* flex-wrap: nowrap; */
-        /* margin-top: 2.5rem; */
+        /* display: block; */
     }
 
     .progress-bubble {
         left: 77%;
         top: 56%;
-        /* display: flex; */
     }
 
     .progress-container {
-        margin-left: 0; 
+        /* margin-left: 0;  */
     }
 
     .gb-left-container {
         top: -130%;
         left: 55%;
         position: relative;
-        align-items: flex-start;
-        display: flex;
-        align-items: center;
+        /* align-items: flex-start; */
+        /* display: flex; */
+        /* align-items: center; */
     }
 
     .gb-left-container::after {
         content: "";
         border: 20px solid transparent;
         position: absolute;
-        left: auto;
+        /* left: auto; */
         right: 0px;
         bottom: -20px;
-        border: 22px solid;
+        /* border: 22px solid; */
         border-color: white white transparent transparent;
     }
 
     .gb-left-container p {
-        align-self: center;
+        /* align-self: center; */
     }
 
     .gb-left-container span {
-        align-self: auto;
+        /* align-self: auto; */
     }
 
 }
