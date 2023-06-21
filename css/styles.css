@@ -87,10 +87,8 @@ main {
     display: grid;
     justify-content: center;
     min-height: 100vh;
-    /* align-items: center; */
     align-content: center;
     grid-template-columns: 350px;
-    /* padding:1rem; */
     gap: 1rem;
 }
 
@@ -107,16 +105,9 @@ main {
     background: var(--darkblue);
 }
 
-.logo-img {
-    /* width: 100%; */
-}
 
-.icon-container {
-    /* display: flex; */
-}
 
 .btn {
-    /* display: inline-block; */
     border:transparent;
     cursor: pointer;
     background: var(--darkblue);
@@ -124,12 +115,9 @@ main {
 }
 
 .icon {
-    /* height: 100%; */
     width: 50px;
     height: 50px;
     background: var(--verydarkblue);
-    /* border-radius: 0.75rem; */
-    /* display: inline; */
     padding: 1rem;
     border-radius: 1rem;
     margin-right : 2rem;
@@ -138,9 +126,7 @@ main {
 /* Storage space */
 .usage-card {
     height:200px;
-    /* align-self: flex-start; */
     background: var(--darkblue);
-    /* border: transparent; */
     border-radius: 1rem;
     padding: 1rem;
     position: relative;
@@ -162,10 +148,6 @@ progress {
     opacity: 0;
 }
 
-.progress-element {
-    /* display: flex; */
-    /* flex-direction: column; */
-}
 
 .progress-container {
     position: relative;
@@ -190,7 +172,6 @@ progress {
 
 /* Storage range values */
 .progress-start {
-    /* position: relative; */
     margin-top: 0.5rem;
     font-weight: 700;
     display: flex;
@@ -226,7 +207,6 @@ progress {
     position: absolute;
     justify-content: center;
     align-items: center;
-    /* align-self: center; */
     top: 80%;
     left: 20%;
 }
@@ -282,45 +262,23 @@ Media Query
         margin-top: 2.5rem;
     }
 
-    progress-element {
-        /* display: block; */
-    }
-
     .progress-bubble {
         left: 77%;
         top: 56%;
-    }
-
-    .progress-container {
-        /* margin-left: 0;  */
     }
 
     .gb-left-container {
         top: -130%;
         left: 55%;
         position: relative;
-        /* align-items: flex-start; */
-        /* display: flex; */
-        /* align-items: center; */
     }
 
     .gb-left-container::after {
         content: "";
         border: 20px solid transparent;
         position: absolute;
-        /* left: auto; */
         right: 0px;
         bottom: -20px;
-        /* border: 22px solid; */
         border-color: white white transparent transparent;
     }
-
-    .gb-left-container p {
-        /* align-self: center; */
-    }
-
-    .gb-left-container span {
-        /* align-self: auto; */
-    }
-
 }
